@@ -72,7 +72,7 @@ export function deleteClient(clientId) {
 // Modify a client
 export function modifyClient(newClient) {
     if (!db) {
-        console.error("La base de datos no está inicializada");
+        console.error("La base de datos no está inicializada")
         return
     }
 

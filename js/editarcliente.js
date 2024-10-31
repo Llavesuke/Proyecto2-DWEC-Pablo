@@ -50,10 +50,10 @@ form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
     // Update the clientObj fields with the values of the form
-    clientObj.nombre = nameField.value;
-    clientObj.email = emailField.value;
-    clientObj.telefono = phoneField.value;
-    clientObj.empresa = businessField.value;
+    clientObj.nombre = nameField.value
+    clientObj.email = emailField.value
+    clientObj.telefono = phoneField.value
+    clientObj.empresa = businessField.value
 
     // Verify all the fields all valid
     if (!isFormValid) {
@@ -67,7 +67,7 @@ form.addEventListener("submit", async (e) => {
 
     // If the email exists and is not from the current client, show an error
     if (existingEmailClient && emailCurrentClient !== clientObj.email) {
-        showAlert(emailField.parentElement, "El email ya existe");
+        showAlert(emailField.parentElement, "El email ya existe")
         return;
     }
 

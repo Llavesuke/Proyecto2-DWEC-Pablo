@@ -1,4 +1,3 @@
-
 # Desarrollo de funcionalidades dinámicas con JavaScript
 
 Este proyecto es una aplicación web que permite gestionar la información de clientes a través de un formulario. La aplicación valida los datos ingresados y se comunica con una API para agregar o modificar la información de los clientes.
@@ -51,20 +50,19 @@ cd nombre-del-repositorio
 ## Uso
 
 1. **Agregar un Cliente** : Completa todos los campos obligatorios (nombre, email, teléfono, empresa) y presiona "Enviar".
-  Completa todos los campos obligatorios (nombre, email, teléfono, empresa) y presiona "Enviar".
+   Completa todos los campos obligatorios (nombre, email, teléfono, empresa) y presiona "Enviar".
 
-    Ejemplo: Si deseas agregar un cliente llamado "Manuel Rivas", ingresa:
-    Nombre: Manuel Rivas
-    Email: manuel.rivas@example.com
-    Teléfono: 645431315
-    Empresa: Rafael Alberti 
-
+   Ejemplo: Si deseas agregar un cliente llamado "Manuel Rivas", ingresa:
+   Nombre: Manuel Rivas
+   Email: manuel.rivas@example.com
+   Teléfono: 645431315
+   Empresa: Rafael Alberti
 2. **Modificar un Cliente** : Si hay datos guardados en `localStorage`, estos se cargarán automáticamente en el formulario al iniciar la aplicación.
-    Ejemplo: Cambia el teléfono de "Manuel Rivas" a 675434241 y presiona "Enviar".
-
+   Ejemplo: Cambia el teléfono de "Manuel Rivas" a 675434241 y presiona "Enviar".
 3. **Eliminar un Cliente** : Haz clic en el ícono de eliminación (X) junto al cliente que deseas eliminar en la tabla. Esto eliminará el cliente de la base de datos.
 
-    Ejemplo: Para eliminar a "Manuel Rivas", haz clic en la X y confirma la acción.
+   Ejemplo: Para eliminar a "Manuel Rivas", haz clic en la X y confirma la acción.
+
 ## Funciones de Validación
 
 El sistema incluye varias funciones de validación para asegurar que la información ingresada sea correcta:
@@ -95,7 +93,7 @@ addClient(clientData);
 ```
 
   Se añade un nuevo cliente a la base de datos.
-  Ejemplo: addClient({ name: 'Manuel Rivas', email: 'manuel.rivas@example.com', phone: '645431315', business: 'Rafael Alberti' });
+  Ejemplo: addClient({ nombre: 'Manuel Rivas', email: 'manuel.rivas@example.com', telefono: '645431315', empresa: 'Rafael Alberti' });
 
 * **Eliminar un Cliente** :
 
@@ -116,7 +114,7 @@ modifyClient(updatedClientData);
 ```
 
   Se actualizan los datos de un cliente existente en la base de datos.
-  Ejemplo: modifyClient({ id: 1, name: 'Manuel Rivas', email: 'manuel.rivas@example.com', phone: '551515516', business: 'Casa Rivas' })
+  Ejemplo: modifyClient({ id: 1, nombre: 'Manuel Rivas', email: 'manuel.rivas@example.com', telefono: '551515516', empresa: 'Casa Rivas' })
 
 * **Obtener Todos los Clientes** :
 
